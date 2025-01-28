@@ -1,0 +1,137 @@
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 700px;
+    padding: 50px;
+    background-color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Заголовок */
+header {
+    position: relative;
+    z-index: 1;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-image: linear-gradient(to right, #2196F3, #FF5722);
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 85%);
+    z-index: -1;
+}
+
+header h1 {
+    font-size: 36px;
+    color: white;
+    margin-top: 60px;
+    text-align: center;
+}
+
+header p {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Секция "Обо мне" */
+.about-me {
+    margin-top: 120px;
+}
+
+.about-me h2,
+.services h2,
+footer h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Услуги */
+.services ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.services li {
+    padding: 12px;
+    background-color: #eaeaea;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Контактная информация */
+footer {
+    margin-top: 40px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    color: #2196F3;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #FF5722;
+}
+
+/* Медиа-запросы для адаптации к разным размерам экранов */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px;
+    }
+    
+    header::before {
+        height: 130px;
+    }
+    
+    header h1 {
+        font-size: 30px;
+    }
+    
+    header p {
+        font-size: 16px;
+    }
+    
+    .about-me {
+        margin-top: 90px;
+    }
+    
+    footer ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irina Rylova</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            width: 600px;
+            height: 600px;
+            background-color: #ffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            border-radius: 50px;
+            padding: 24px;
+            display: grid;
+            gap: 16px;
+            grid-template-rows: auto 1fr auto;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            margin-top: 16px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill {
+            padding: 4px 8px;
+            background-color: #eaeaea;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .contacts {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+        }
+
+        .icon {
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                width: 90vw;
+                height: centr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <img src="C:\Users\dns\Desktop\Мой сайт\IMG_8588-редакт.jpg" alt="C:\Users\dns\Desktop\Мой сайт\IMG_8588-редакт.jpg" class="profile-image">
+    <h1>Привет! Это я </h1>
+    <div class="description">
+        <p>  Меня зовут Ирина, и я ищу баги. Мои сильные стороны включают глубокое понимание процессов тестирования, умение быстро находить и анализировать баги, а также способность эффективно взаимодействовать с командой разработчиков и менеджерами проектов.</p>
+    </div>
+    <div class="skills">
+        <span class="skill">API</span>
+        <span class="skill">SOAP</span>
+        <span class="skill">Postman</span>
+        <span class="skill">Check-list</span>
+        <span class="skill">Use case</span>
+         <span class="skill">HTML</span>
+          <span class="skill">SQL</span>
+          <span class="skill">Charles</span>
+          <span class="skill">Ищу баги, чтобы ты не нашёл дефекты</span>
+     </div>
+    <div class="contacts">
+        <div>
+            <img src="C:\Users\dns\Desktop\Мой сайт\81055.png" alt="Иконка почты" class="icon">
+            martibo@rambler.ru
+        </div>
+        <div>
+            <img src="C:\Users\dns\Desktop\Мой сайт\1509974.png" alt="Иконка телефона" class="icon">
+            +7 (902) 442-76-69
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
